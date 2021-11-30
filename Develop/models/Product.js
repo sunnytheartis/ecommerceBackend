@@ -16,8 +16,18 @@ Product.init(
       primaryKey: true,
       autoIncrement: true
 
+    },
+    product_name: {
+      type: DataTypes.STRING,
+      allowNull: false
+    },
+    stock: {
+      type: DataTypes.INTEGER,
+      allowNull:false,
+      defaultValue: 10
     }
   },
+ 
   {
     sequelize,
     timestamps: false,
